@@ -1,4 +1,4 @@
-.footer {
+.footer.footer-container {
   background-color: var(--primery-bg-color);
   font-size: 14px;
   line-height: 1.71;
@@ -6,17 +6,7 @@
   padding-bottom: 60px;
 }
 
-.footer-link {
-  color: var(--footer-link);
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover,
-  &:focus {
-    color: var(--bg-color);
-  }
-}
 
 .footer-container {
   @include mq(not-desk) {
@@ -34,7 +24,7 @@
   @include mq(tab) {
     display: flex;
     flex-wrap: wrap;
-    gap: 60px 165px;
+    gap: 0 165px;
 
     align-items: baseline;
   }
@@ -95,11 +85,25 @@
   }
 }
 
+.mail.footer-link,
+.tel.footer-link {
+  color: var(--footer-link);
+  display: block;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--bg-color);
+  }
+}
+
 .soc {
   margin: 60px auto;
-  // @include mq (tab){
-  //   margin-left: 165px;
-  // }
+  @include mq (tab){
+    margin: 0 auto;
+  }
   @include mq(desk) {
     margin: 0 0;
     margin-right: 93px;

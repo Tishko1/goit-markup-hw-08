@@ -10,12 +10,14 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  min-width: 170px;
+  // min-width: 170px;
+  width: 100%;
 }
 
 .clients-item {
   width: calc((100% - 30px) / 2);
   margin-bottom: 30px;
+  height: 92px;
   @include mq(tab) {
     // @media screen and (min-width:768px){
     width: calc((100% - 60px) / 3);
@@ -23,6 +25,7 @@
   @include mq(desk) {
     width: 170px;
     height: 92px;
+    margin-bottom: 0;
   }
 }
 

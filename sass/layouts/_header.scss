@@ -351,6 +351,7 @@
 .mob-soc-list {
   @include mq(mob-only) {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 
     // padding-left: 100px;

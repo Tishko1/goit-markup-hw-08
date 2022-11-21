@@ -1,10 +1,11 @@
 .activities {
-  // padding-bottom: 94px;
+  
 width: 100%;
   @media screen and (max-width: 1199px) {
     display: none;
     width: 100%;
   }
+  padding-bottom: 94px;
 }
 .activities__list {
   
