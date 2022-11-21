@@ -31,14 +31,12 @@
   }
 }
 .logo.up {
-  &:hover {
-    color: var(--logo-hover);
-  }
-  @include mq(mob) {
+  
+  
     padding-top: 16px;
     padding-bottom: 16px;
     // margin-right: 87px;
-  }
+ 
   @include mq(tab) {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -48,6 +46,9 @@
     padding-top: 24px;
     padding-bottom: 25px;
     margin-right: 93px;
+  }
+  &:hover {
+    color: var(--logo-hover);
   }
 }
 

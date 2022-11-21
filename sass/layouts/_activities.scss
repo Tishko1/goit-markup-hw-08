@@ -1,14 +1,13 @@
 .activities {
   // padding-bottom: 94px;
-
+width: 100%;
   @media screen and (max-width: 1199px) {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    height: 0;
+    display: none;
+    width: 100%;
   }
 }
 .activities__list {
+  
   display: flex;
   gap: 30px;
   min-width: 370px;

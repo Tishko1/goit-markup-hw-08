@@ -11,10 +11,10 @@
   // display: flex;
   // justify-content: center;
   // align-items: center;
-  min-width: 270px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  width: 100%;
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 30px;
   justify-content: space-between;
   @include mq(tab) {
     // @media screen and (min-width:768px){

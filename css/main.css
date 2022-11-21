@@ -51,7 +51,7 @@ ol {
 
 img {
   display: block;
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -118,14 +118,9 @@ a {
   }
 }
 
-.logo.up:hover {
-  color: var(--logo-hover);
-}
-@media screen and (min-width: 480px) {
-  .logo.up {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+.logo.up {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .logo.up {
@@ -140,6 +135,9 @@ a {
     padding-bottom: 25px;
     margin-right: 93px;
   }
+}
+.logo.up:hover {
+  color: var(--logo-hover);
 }
 
 .accent-up {
@@ -871,12 +869,13 @@ a {
   }
 }
 
+.activities {
+  width: 100%;
+}
 @media screen and (max-width: 1199px) {
   .activities {
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    height: 0;
+    display: none;
+    width: 100%;
   }
 }
 
@@ -914,10 +913,7 @@ a {
 }
 
 .team-container {
-  min-width: 270px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  width: 100%;
   justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
